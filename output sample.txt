@@ -1,0 +1,15 @@
+Log Analysis Results: 
+
+The most popular articles of all time are: 
+Candidate is jerk, alleges rival __ 338647 views
+Bears love berries, alleges bear __ 253801 views
+Bad things gone, say good people __ 170098 views
+
+The most popular article authors of all time are: 
+Ursula La Multa __ 507594 views
+Rudolf von Treppenwitz __ 423457 views
+Anonymous Contributor __ 170098 views
+Markoff Chaney __ 84557 views
+
+The day with more than 1% of requests lead to errors is: 
+July      17,2016 __ 2.263 %
