@@ -5,6 +5,14 @@ The database contains newspaper articles, as well as the web server log for the 
 Using that information, This project will answer questions about the site's user activity.
 It connects that database, use SQL queries to analyze the log data, and print out the answers to some questions.
 
+
+## This reporting tool answers the following questions:
+
+1. What are the most popular three articles of all time?
+2. Who are the most popular article authors of all time?
+3. On which days did more than 1% of requests lead to errors?
+
+
 ## Requirements:
 
 ### To use this project, you'll need database software (provided by a Linux virtual machine) and the data to analyze.
@@ -32,15 +40,7 @@ We're using tools called Vagrant and VirtualBox to install and manage the VM. Yo
 
   **Windows users:** The Installer may ask you to grant network permissions to Vagrant or make a firewall exception. Be sure   to allow this.
   
-  #### Download the VM configuration
-  
-  There are a couple of different ways you can download the VM configuration:
-
-  1. You can download and unzip this file: [FSND-Virtual-Machine.zip](https://goo.gl/ujE6Wb) This will give you a directory     called **FSND-Virtual-Machine**. It may be located inside your **Downloads** folder.
-
-  2. Alternately, you can use Github to fork and clone the repository <https://github.com/udacity/fullstack-nanodegree-vm>.
-
-  Either way, you will end up with a new directory containing the VM files. Change to this directory in your terminal with     `cd`. Inside, you will find another directory called vagrant. Change directory to the vagrant directory.
+  #### Download [Vagrantfile](https://github.com/DoaaMakhlouf/logs-analysis/blob/master/Vagrantfile) 
 
   #### Start the virtual machine
   
@@ -60,7 +60,7 @@ We're using tools called Vagrant and VirtualBox to install and manage the VM. Yo
   
 ### 2- Download the data:
 
-[Download the data here](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip). You will need to unzip this file after downloading it. The file inside is called `newsdata.sql`. Put this file into the `vagrant` directory, which is shared with your virtual machine.
+[Download the data here](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip). You will need to unzip this file after downloading it. The file inside is called `newsdata.sql`. Put this file into the **Vagrantfile** directory, which is shared with your virtual machine.
 
 To build the reporting tool, you'll need to load the site's data into your local database.
 
@@ -76,3 +76,12 @@ Running this command will connect to your installed database server and execute 
 ### 3- Download and install python 2.7 from [here](https://www.python.org/downloads/) .
 
 ### 4- Download all files from [logs-analyasis](https://github.com/DoaaMakhlouf/logs-analysis).
+
+
+## Run the program:
+
+1. Run `cd` to the directory that contains the **Vagrantfile**
+2. Run the command `vagrant up` to start VM
+3. Run the command `vagrant ssh` to login VM
+4. Run the command `cd /vagrant`
+5. Run the command `python reportingtooldb.py`
